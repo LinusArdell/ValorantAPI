@@ -5,35 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Agent</title>
 </head>
 
 <body>
-    <!-- <div id="app">
-        <h2>{{  agent }}</h2> -->
-
-    <!-- <ul v-for="row in dataAgent">
-            <li>{{ row.displayName }}</li>
-            <li>{{ row.description }}</li>
-        </ul> -->
-
-    <!-- <table border="1" v-for="data in dataAgent">
-            <tr>
-                <td>{{ data.displayName }}</td>
-            </tr>
-            <tr>
-                <td>{{ data.description }}</td>
-            </tr>
-        </table>
-    </div> -->
-
     <div id="valorant">
-        <div class="card" v-for="data in dataAgent">
-            <img v-bind:src="icon" alt="" width="100%">
-            <div class="container">
-                <h2> {{data.displayName}} </h2>
-                <p> {{data.description}} </p>
-                <img src="{{data.displayIcon}}" alt="">
+        <div class="card" v-for="data in dataAgent" style="width:20rem">
+            <img class="card-img-top" v-bind:src="data.displayIcon" alt="">
+            <div class="container card-body">
+                <h2 class="card-title"><b> {{data.displayName}} </b></h2>
+                <p class="card-text"> {{data.description}} </p>
             </div>
         </div>
     </div>
@@ -56,7 +40,6 @@
                     .then(response => {
                         console.log(response);
                         this.dataAgent = response.data;
-                        this.icon = response.data.displayIcon;
                     })
             }
         })
