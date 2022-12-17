@@ -1,12 +1,12 @@
 {
     "version": 2,
-    "name": "Valorant-API",
+    "name": "public-api",
     "builds": [{
         "src": "app.js",
         "use": "@vercel/node"
     }],
     "routes": [{
-        "src": "/routes",
+        "src": "/(.*)",
         "dest": "/app.js"
     }]
 }
