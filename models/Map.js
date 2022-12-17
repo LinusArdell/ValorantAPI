@@ -10,7 +10,7 @@ const MapSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    displayIcon: {
+    splash: {
         type: String,
         required: true
     }

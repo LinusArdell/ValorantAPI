@@ -7,7 +7,7 @@ router.post('/', async (req, res) => {
     const mapPost = new Map({
         displayName: req.body.displayName,
         coordinates: req.body.coordinates,
-        displayIcon: req.body.displayIcon
+        splash: req.body.splash
     })
 
     try {
