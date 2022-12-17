@@ -24,4 +24,15 @@ router.post('/', async (req, res) => {
     }
 })
 
+router.get('/', async (req, res) => {
+    try {
+        const agent = await Agent.find()
+        res.json(agent)
+    } catch (error) {
+        res.json({
+            message: error
+        })
+    }
+})
+
 module.exports = router
