@@ -9,8 +9,33 @@
 </head>
 
 <body>
-    <div id="app">
-        <h2>{{  agent }}</h2>
+    <!-- <div id="app">
+        <h2>{{  agent }}</h2> -->
+
+    <!-- <ul v-for="row in dataAgent">
+            <li>{{ row.displayName }}</li>
+            <li>{{ row.description }}</li>
+        </ul> -->
+
+    <!-- <table border="1" v-for="data in dataAgent">
+            <tr>
+                <td>{{ data.displayName }}</td>
+            </tr>
+            <tr>
+                <td>{{ data.description }}</td>
+            </tr>
+        </table>
+    </div> -->
+
+    <div id="valorant">
+        <div class="card" v-for="data in dataAgent">
+            <img v-bind:src="icon" alt="" width="100%">
+            <div class="container">
+                <h2> {{data.displayName}} </h2>
+                <p> {{data.description}} </p>
+                <img src="{{data.displayIcon}}" alt="">
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
@@ -18,20 +43,24 @@
 
     <script>
         let vm = new Vue({
-            el: "#app",
+            el: "#valorant",
             data: {
-                agent: "Data Agent Valorant"
+                agent: "Data Agent Valorant",
+                dataAgent: null,
+                icon: ''
             },
 
             mounted() {
                 axios
-                    .get('https://valorant-api-rho.vercel.app/agent',
-                        'https://valorant-api-rho.vercel.app/map')
+                    .get('https://valorant-api-rho.vercel.app/agent')
                     .then(response => {
                         console.log(response);
+                        this.dataAgent = response.data;
+                        this.icon = response.data.displayIcon;
                     })
             }
         })
+        //'https://valorant-api-rho.vercel.app/map'
     </script>
 </body>
 
