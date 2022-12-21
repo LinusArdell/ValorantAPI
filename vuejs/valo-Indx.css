@@ -1,0 +1,58 @@
+.bg-img {
+  /* The image used */
+  background-image: url("Ascent_Map.png");
+  
+
+  min-height: 100px;
+  min-width: 50px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+.bg-img img{
+  float: left;
+  padding: 7px;
+  padding-bottom: 14px;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  position: fixed;
+  float: left;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  
+    padding-bottom: 11px;
+    text-decoration: none;
+    padding-left: 100px;
+  background-color: rgba(25, 25, 25, 0);
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(250, 68, 84.100);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
