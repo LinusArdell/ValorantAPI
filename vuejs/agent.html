@@ -20,7 +20,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Agent to Queque</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -48,16 +48,32 @@
         </div>
 
         <!-- Card agent Valorant -->
-        <div class="col-lg-4 mt-2">
-            <div class="card mt-2" v-for="data in dataAgent">
-                <!-- <div class="card-header">Agent</div> -->
-                <img class="card-img-top" v-bind:src="data.displayIcon" alt="">
-                <div class="card-body">
-                    <h2 class="card-title"><b> {{data.displayName}} </b></h2>
-                    <p class="card-text"> {{data.description}} </p>
+        <div class="col-lg-4 mt-2" >
+            <div class="card" v-for="data in dataAgent">
+                <div class="card mt-2" >
+                    <img class="card-img-top" v-bind:src="data.displayIcon" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title"><b> {{data.displayName}} </b></h2>
+                        <p class="card-text"> {{data.description}} </p>
+                    </div>
                 </div>
+                <!-- <button class="col-4 geser" style="height: 100px; width: 10px;">test</button> -->
             </div>
         </div>
+
+        <!-- <div class="card mb-3" v-for="data in dataAgent" style="max-width: 700px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img v-bind:src="data.displayIcon" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{data.displayName}}</h5>
+                  <p class="card-text">{{data.description}}</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
 
 
     </div>
