@@ -59,18 +59,18 @@
             </div>
         </div>
 
-<!-- Container card Agent -->
+        <!-- Container card Agent -->
         <div class="card col-lg-12 col-sm-8 mt-2 cardO" v-for="data in dataAgent">
-    <!-- Card agent Valorant -->
-                <div class="card agentCard col-lg-5">
-                    <img class="card-img-top" v-bind:src="data.displayIcon" alt="">
-                    <div class="card-body">
-                        <h2 class="card-title">{{data.displayName}}</h2>
-                        <p class="card-text"> {{data.description}} </p>
-                    </div>
+            <!-- Card agent Valorant -->
+                        <div class="card agentCard col-lg-5">
+                            <img class="card-img-top" v-bind:src="data.displayIcon" alt="">
+                            <div class="card-body">
+                                <h2 class="card-title">{{data.displayName}}</h2>
+                                <p class="card-text"> {{data.description}} </p>
+                            </div>
+                        </div>
                 </div>
-        </div>
-    </div>
+            </div>
 
 <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
