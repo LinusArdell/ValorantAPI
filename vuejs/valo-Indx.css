@@ -43,22 +43,27 @@
 
 
 /* The navbar */
-.margin-left{
-  margin-left: 12rem;
+.margin-bottom{
+  margin-bottom: 50px;
+
+}
+.top-margin{
+ margin-top: 100px;
 }
 .topnav {
   position: absolute;
-  float: left;
-  display: block;
+  float: right;
+  display: flex;
  
   text-align: center;
   
-    padding-bottom: 11px;
     text-decoration: none;
-    padding-left: 100px;
-  background-color: rgba(25, 25, 25, 0);
+    padding-left: 20px;
+  background-color: rgba(25, 25, 25,1);
 }
-
+.padang{
+  padding-left: 50px;
+}
 /* Navbar links */
 .topnav a {
   float: left;
