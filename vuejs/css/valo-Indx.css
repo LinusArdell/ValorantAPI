@@ -62,7 +62,8 @@
   background-color: rgba(25, 25, 25,1);
 }
 .padang{
-  padding-left: 50px;
+  padding-left: 100px;
+ 
 }
 /* Navbar links */
 .topnav a {
@@ -74,7 +75,7 @@
   font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav .padang a:hover {
   background-color: rgba(250, 68, 84.100);
   color: rgb(0, 0, 0);
   font-weight: bold;
