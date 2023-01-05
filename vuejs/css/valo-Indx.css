@@ -27,7 +27,7 @@
 .mere {
   margin-left: 130px
 }
-.a hover
+
 
 .bg-img img{
   float: left;
@@ -51,7 +51,7 @@
  margin-top: 100px;
 }
 .topnav {
-  position: absolute;
+ 
   float: right;
   display: flex;
  
@@ -66,11 +66,28 @@
  
 }
 /* Navbar links */
-.topnav a {
+#navbar {
+  overflow: hidden;
+ 
+}
+
+#navbar a {
+  float: left;
+  display: block;
+ 
+}
+.sticky {
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav .naze a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -101,14 +118,6 @@
 /* BAGIAN ICON */
 
 
-.nav-menu ul{
-  display: flex;
-}
-.nav-menu ul{
-  margin: 0;
-}
-
-
 
 /* footer */
 
@@ -117,7 +126,7 @@
   font-size: 14px;
   background: linear-gradient(
 45deg
-,#0a141eee 20%,#ff4654ee),url(../img/hero-bg.jpg?v=1) center center no-repeat;
+,#0a141eee 20%,#ff4654ee), center center no-repeat;
   background-size: cover;
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
