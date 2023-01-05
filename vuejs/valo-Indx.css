@@ -1,38 +1,56 @@
-.bg-img {
-  /* The image used */
-  background-image: url("Ascent_Map.png");
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0 0 25px 0 #0000001a;
   
-
-  min-height: 100px;
-  min-width: 50px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* Needed to position the navbar */
+}
+.services .icon-box {
+  width: 100%;
+  text-align: center;
+  padding: 30px 20px 40px;
+  transition: all ease-in-out .3s;
+  background: rgb(10, 10, 10);
+  color: #fff;
+}
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out .3s;
   position: relative;
 }
+
+/*BAGIAN */
+.mere {
+  margin-left: 130px
+}
+.a hover
+
 .bg-img img{
   float: left;
   padding: 7px;
   padding-bottom: 14px;
+
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
 }
 
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
+
 
 /* The navbar */
+.margin-left{
+  margin-left: 12rem;
+}
 .topnav {
-  position: fixed;
+  position: absolute;
   float: left;
   display: block;
-  overflow: hidden;
+ 
   text-align: center;
   
     padding-bottom: 11px;
@@ -56,3 +74,55 @@
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
+
+/* body */
+.bg-color{
+  background-color: rgb(31, 31, 31);
+
+}
+.text-white{
+  color: white;
+  text-align: center;
+  font-size: 25;
+  padding: 5rem;
+}
+
+.icon-box:hover{
+  background-color: rgba(250, 68, 84.100);
+  color: rgb(31, 31, 31);
+
+}
+/* BAGIAN ICON */
+
+
+.nav-menu ul{
+  display: flex;
+}
+.nav-menu ul{
+  margin: 0;
+}
+
+
+
+/* footer */
+
+#footer {
+  color: #fff;
+  font-size: 14px;
+  background: linear-gradient(
+45deg
+,#0a141eee 20%,#ff4654ee),url(../img/hero-bg.jpg?v=1) center center no-repeat;
+  background-size: cover;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+user agent stylesheet
+footer {
+  display: block;
+}
+
+
