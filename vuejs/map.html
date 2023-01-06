@@ -13,18 +13,32 @@
 </head>
 
 <body>
-    <nav class="">
+    <nav id="navbar" class="sticky-top">
+        <div class=""> 
+          <div class="container-fluid topnav text-center p-3" >                
+            <!-- <a href="#home">Home</a> -->
+            <a id=""href="#Map">
+              <img src="../img/Valorant Logo.png" alt="Valorant" width=100px height="">
+              <div class="padang naze">
+            </a>
+            <button onclick="document.location='../index.html'" class="btn">Home</button>
+                <button type="button" class="btn modal-button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo">Add Map</button>
+              <br>
+              <br>
+            </div>
+        </div>               
+      </nav>
+    <!-- <nav class="">
         <div class="col-lg-12">
             <div class="bg-img">
                 .<img src="../img/Valorant Logo.png" alt="Valorant" width=100px>
               <div class="topnav ">   
-                <button onclick="document.location='../index.html'" class="btn">Home</button>
-                <button type="button" class="btn modal-button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                data-bs-whatever="@mdo">Add Map</button>
+                
               </div>          
             </div>
         </div> 
-    </nav>
+    </nav> -->
 
     <div id="Map" class="p-2">
 
@@ -53,23 +67,42 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button v-on:click="saveMap" class="btn btn-primary">Save</button>
+                        <button v-on:click="saveMap" class="btn btn-danger">Save</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Card Map Valorant -->
-        <div class="col-lg-5 mt-2">
-            <div class="card mt-2" v-for="data in dataMap">
+        <div v-for="data in dataMap">
+        <div class="container">
+            <div class="card">
+                <figure class="card__thumb">
+                    <img v-bind:src="data.splash">
+                    <figcaption class="card__caption">
+                        <h2 class="card__title"><b> {{data.displayName}} </b>
+                            <h5> {{data.coordinates}} </p></h5>
+                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope</p>
+                        <img src="../img/neptune.jpg" alt="" srcset="" style=" height:200px ; width: 350px">
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- <div class="container">
+        <div class="card-group">
+            <div class="mere col-lg-10 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100" >
+            <div class="card container"v-for="data in dataMap " >
                 <img class="card-img-top" v-bind:src="data.splash" alt="">
                 <div class="card-body">
                     <h2 class="card-title"><b> {{data.displayName}} </b></h2>
                     <p class="card-text"> {{data.coordinates}} </p>
                 </div>
+            
             </div>
-        </div>
-
+            </div>
+    </div>
+    </div> -->
         <!-- <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card" v-for="data in dataMap">
