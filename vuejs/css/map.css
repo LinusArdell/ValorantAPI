@@ -1,0 +1,64 @@
+body{
+    background-color: #fb4454;
+}
+
+
+
+/* Navbar background */
+.bg-img {
+    background-color: #111c23;
+
+    min-height: 90px;
+    min-width: 50px;
+
+    position: relative;
+    /* padding-top: 6px; */
+    padding-left: 7px;
+}
+
+/* Valorant logo position */
+.bg-img img{
+    float: left;
+    padding: 7px;
+    padding-bottom: 5px;
+}
+  
+/* The navbar */
+.topnav {
+    position: absolute;
+    float: left;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+  
+    padding-bottom: 5px;
+    text-decoration: none;
+    padding-left: 100px;
+    background-color: rgba(25, 25, 25, 0);
+}
+
+
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* Button on Navbar */
+.topnav button {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: none;
+    border: none;
+}
+
+.topnav button:hover {
+    background-color: rgba(250, 68, 84.100);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
