@@ -1,165 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="vuejs/css/valo-Indx.css">
     <title>Index</title>
     <link rel="icon" href="img/val only.png " type="image/x-icon">
-    
-</head>
+  </head>
 
-<body class="bg-color ">
+  <body class="bg-color ">
 
-    
-     <nav  class="sticky-top">
-         <div class="">
-           
-           <div class="container-fluid topnav text-center p-3" >                
-             <!-- <a href="#home">Home</a> -->
-             <a id=""href="#home">
-             <img src="img/Valorant Logo.png" alt="Valorant" width=100px height="">
-             <div class="padang naze"></a>
-             <a href="vuejs/agent.html">Agent</a>
-             <a href="vuejs/map.html">Map</a>
-             <a href="#features">Features</a>
-             <a href="#about">About</a>
-             <br>
-             <br>
-           </div>
-           </div>          
-             
-             
-          
-         </div>
-        
-     </nav>
-     <br>
- 
-   
-
-   <!-- ISI TUBUH MULAI DARI SINI -->
-
-<!-- Carousel -->
-<div id="home">
-<div id="demo" class="top-margin carousel slide" data-bs-ride="carousel">
-
-  <!-- Indicators/dots -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    
-  </div>
-  
-  <!-- The slideshow/carousel -->
-  <div class="carousel-inner p-5">
-    <div class="carousel-item active">
-      <img src="img/Ascent_Map.png" alt="Los Angeles" class="d-block mx-auto" style=" height:500px ; width:90%">
-      <div class="carousel-caption ">
-        <h1>Let's Play Valorant</h1>
-       <h2></h2>
-       <a href="https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.ap.exe" target="_blank"><button class="btn btn-danger">MAIN GRATIS</button></a>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/haven.jpg" alt="Chicago" class="d-block mx-auto" style="height:500px ;width:90%">
-      <div class="carousel-caption">
-        
-        ---
-      </div> 
-    </div>
-    <div class="carousel-item">
-      <img src="img/valorant_fade.jpg" alt="New York" class="d-block mx-auto" style="height:500px ;width:90% ">
-      <div class="carousel-caption">
-       ---
-      </div>  
-    </div>
-     <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-  </div>
-  
- 
-</div>
-</div>
-
-   <main id="main">
-
-    <!-- ======= Features Section ======= -->
-  <section id="features" class="services section-bg p-5">
-      <div class=" aos-init aos-animate " data-aos="fade-up">
-      <div class=" text-white"><Strong>F E A T U R E S</Strong></div>
-        
-
-        <div class="row">
-
-          <div class="mere col-lg-5 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100" >
-            <div class="icon-box iconbox-blue">
-              <a href="vuejs/agent.html">
-              <div class="icon">
-                <i class="fas fa-users"> <img src="img/agent Ico.png" alt="agent" type="img">
-                </i>
-              </div>
-            </a>
-              <h4>Agents</h4>
-              <p>Data dan asset dari semua Agent dan Ability Mereka</p>
-            </div>
+    <nav id="navbar" class="sticky-top">
+      <div class=""> 
+        <div class="container-fluid topnav text-center p-3" >                
+          <!-- <a href="#home">Home</a> -->
+          <a id=""href="#home">
+            <img src="img/Valorant Logo.png" alt="Valorant" width=100px height="">
+            <div class="padang naze">
+          </a>
+          <a href="vuejs/agent.html">Agent</a>
+          <a href="vuejs/map.html">Map</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+            <br>
+            <br>
           </div>
-        
+      </div>               
+    </nav>
+    <br>
+ 
+    <!-- ISI TUBUH MULAI DARI SINI -->
 
-          <div class="col-lg-5 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange">
-              <a href="vuejs/map.html">
-              <div class="icon">
-                <svg width="500" height="500" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="fas fa-cube"></i>
-              </div>
-            </a>
-              <h4>Maps</h4>
-              <p>Data dan asset dari Map yang ada di Valorant</p>
+    <!-- Carousel -->
+    <div id="home">
+      <div id="demo" class="top-margin carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner p-5">
+          <div class="carousel-item active">
+            <img src="img/Ascent_Map.png" alt="Los Angeles" class="d-block mx-auto" style=" height:500px ; width:90%">
+            <div class="carousel-caption ">
+              <h1>Let's Play Valorant</h1>
+              <a href="https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.ap.exe" target="_blank"><button class="btn btn-danger">MAIN GRATIS</button></a>
             </div>
           </div>
 
-          
-        </div><!-- End row -->
+          <div class="carousel-item">
+            <img src="img/haven.jpg" alt="Chicago" class="d-block mx-auto" style="height:500px ;width:90%">
+            <div class="carousel-caption">
+              
+              ---
+            </div> 
+          </div>
 
+          <div class="carousel-item">
+            <img src="img/valorant_fade.jpg" alt="New York" class="d-block mx-auto" style="height:500px ;width:90% ">
+            <div class="carousel-caption">
+            ---
+            </div>  
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
       </div>
-    </section><!-- End Services Section -->
+    </div>
 
-  </main>
+    <!-- Agent Swiper -->
+    <section id="agent">
+      <div class="container">
+        <div class="swiper agent-slider">
+          <div class="swiper-wrapper">
+
+            <!-- Agent 1 -->
+            <div class="swiper-slide agent-slide" style="background-image: url(https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/background.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="agent-slide-img">
+                <img src="https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/fullportrait.png" alt="" >
+              </div>
+              <div class="agent-slide-content">
+                <div class="role">
+                  <img src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png" style="max-width: 50%; max-height: 50%;">
+                </div>
+                <div class="agent-slide-content-bottom">
+                  <h2 class="agent-name">Fade</h2>
+                  <!-- <div class="agent-bio">                    
+                    <img src="https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability1/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ability2/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/grenade/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/dade69b4-4f5a-8528-247b-219e5a1facd6/abilities/ultimate/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                  </div>                -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent 2 -->
+            <div class="swiper-slide agent-slide" style="background-image: url(https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/background.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="agent-slide-img">
+                  <img src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/fullportrait.png">
+              </div>
+              <div class="agent-slide-content">
+                <div class="role">
+                  <img src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png" style="max-width: 50%; max-height: 50%;">
+                </div>
+                <div class="agent-slide-content-bottom">
+                  <h2 class="agent-name">Breach</h2>
+                  <!-- <div class="agent-bio">                    
+                    <img src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability1/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ability2/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/grenade/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/abilities/ultimate/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent 3 -->
+            <div class="swiper-slide agent-slide" style="background-image: url(https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/background.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="agent-slide-img">
+                <img src="https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/fullportrait.png" alt="">
+              </div>
+              <div class="agent-slide-content">
+                <div class="role">
+                  <img src="https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png" style="max-width: 50%; max-height: 50%;">
+                </div>
+                <div class="agent-slide-content-bottom">
+                  <h2 class="agent-name">Raze</h2>
+                  <div class="agent-bio">                    
+                    <img src="https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability1/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ability2/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/grenade/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/f94c3b30-42be-e959-889c-5aa313dba261/abilities/ultimate/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent 4 -->
+            <div class="swiper-slide agent-slide" style="background-image: url(https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/background.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="agent-slide-img">
+                <img src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/fullportrait.png" alt="">
+              </div>
+              <div class="agent-slide-content">
+                <div class="role">
+                  <img src="https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png" style="max-width: 50%; max-height: 50%;">
+                </div>
+                <div class="agent-slide-content-bottom">
+                  <h2 class="agent-name">Chamber</h2>
+                  <div class="agent-bio">                    
+                    <img src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability2/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ability1/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/ultimate/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent 5 -->
+            <div class="swiper-slide agent-slide" style="background-image: url(https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/background.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="agent-slide-img">
+                <img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/fullportrait.png" alt="">
+              </div>
+              <div class="agent-slide-content">
+                <div class="role">
+                  <img src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png" style="max-width: 50%; max-height: 50%;">
+                </div>
+                <div class="agent-slide-content-bottom">
+                  <h2 class="agent-name">KAY/O</h2>
+                  <div class="agent-bio">                    
+                    <img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability1/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ability2/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/ultimate/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent 6 -->
+            <div class="swiper-slide agent-slide" style="background-image: url(https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/background.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="agent-slide-img">
+                <img src="https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/fullportrait.png" alt="">
+              </div>
+              <div class="agent-slide-content">
+                <div class="role">
+                  <img src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png" style="max-width: 50%; max-height: 50%;">
+                </div>
+                <div class="agent-slide-content-bottom">
+                  <h2 class="agent-name">Skye</h2>
+                  <div class="agent-bio">                    
+                    <img src="https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability1/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ability2/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/grenade/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent 7 -->
+            <div class="swiper-slide agent-slide" style="background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/background.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="agent-slide-img">
+                <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png" alt="">
+              </div>
+              <div class="agent-slide-content">
+                <div class="role">
+                  <img src="https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png" style="max-width: 50%; max-height: 50%;">
+                </div>
+                <div class="agent-slide-content-bottom">
+                  <h2 class="agent-name">Cypher</h2>
+                  <div class="agent-bio">                    
+                    <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability1/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                    <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ultimate/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent 8 -->
+            <div class="swiper-slide agent-slide" style="background-image: url(https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/background.png); background-repeat: no-repeat; background-size: cover;">
+              <div class="agent-slide-img">
+                <img src="https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/fullportrait.png" alt="">
+              </div>
+              <div class="agent-slide-content">
+                <div class="role">
+                  <img src="https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png" style="max-width: 50%; max-height: 50%;">
+                </div>
+                <div class="agent-slide-content-bottom">
+                  <h2 class="agent-name">Brimstone</h2>
+                  <div class="agent-bio">                    
+                      <img src="https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/grenade/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                      <img src="https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability1/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                      <img src="https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ability2/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                      <img src="https://media.valorant-api.com/agents/9f0d8ba9-4140-b941-57d3-a7ad57c6b417/abilities/ultimate/displayicon.png" alt="" style="max-width: 15%; max-height: 15%;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="agent-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+    </section>
     
+    <!-- Script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 
+    <main id="main">
 
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="services section-bg p-5">
+        <div class=" aos-init aos-animate " data-aos="fade-up">
+          <div class=" text-white"><Strong>F E A T U R E S</Strong></div>
+          
+          <div class="row">
+            <div class="mere col-lg-5 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100" >
+              <div class="icon-box iconbox-blue">
+                <a href="vuejs/agent.html">
+                <div class="icon">
+                  <i class="fas fa-users"> <img src="img/agent Ico.png" alt="agent" type="img">
+                  </i>
+                </div>
+                </a>
+                <h4>Agents</h4>
+                <p>Data dan asset dari semua Agent dan Ability Mereka</p>
+              </div>
+            </div>
+          
+            <div class="col-lg-5 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box iconbox-orange">
+                <a href="vuejs/map.html">
+                <div class="icon">
+                  <svg width="500" height="500" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                  </svg>
+                  <i class="fas fa-cube"></i>
+                </div>
+                </a>
+                <h4>Maps</h4>
+                <p>Data dan asset dari Map yang ada di Valorant</p>
+              </div>
+            </div>
 
-<script>
-  window.onscroll = function() {myFunction()};
+          </div><!-- End row -->
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+        </div>
+      </section><!-- End Services Section -->
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+    </main>
+  </body> 
+  
   <footer id="footer">
 
     <div class="row">
@@ -181,18 +346,7 @@ function myFunction() {
         </div>
       </div>
 
-    </div>
+      </div>
   </footer>
-  <!-- <footer class= "bg-dark text-white">
-    <div class="row">                 
   
-  
-        <div class="col-12 py-4">
-            &copy; By :Ambrose Dwi & Linus Ardell
-        </div>
-    </div>
-  </footer> -->
-</body>
-
-    
 </html>
