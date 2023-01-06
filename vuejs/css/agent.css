@@ -20,6 +20,12 @@ body{
     color: white;
 }
 
+.agent-name {
+    position: absolute;
+    float: right;
+    margin-left: 6rem;
+}
+
 /* Navbar background */
 .bg-img {
     background-color: #111c23;
