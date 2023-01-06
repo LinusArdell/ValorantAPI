@@ -49,6 +49,10 @@
                                     <label for="message-text" class="col-form-label">Agent's Potrait :</label>
                                     <input type="text" class="form-control" v-model="displayIcon"></input>
                                 </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Agent's Icon :</label>
+                                    <input type="text" class="form-control" v-model="feedIcon"></input>
+                                </div>
                             </div>          
                         </form>
                     </div>
@@ -64,9 +68,10 @@
         <div class="card col-lg-12 col-sm-8 mt-2 cardO" v-for="data in dataAgent">
             <!-- Card agent Valorant -->
                         <div class="card agentCard col-lg-5">
+                            <h2 class="card-title card-body"><img v-bind:src="data.feedIcon" alt=""></h2>
+                            <h2 class="card-title card-body">{{data.displayName}}</h2>
                             <img class="card-img-top" v-bind:src="data.displayIcon" alt="">
                             <div class="card-body">
-                                <h2 class="card-title">{{data.displayName}}</h2>
                                 <p class="card-text"> {{data.description}} </p>
                             </div>
                         </div>
@@ -86,7 +91,8 @@
 
                 displayName: null,
                 description: null,
-                displayIcon: null
+                displayIcon: null,
+                feedIcon: null
             },
 
             methods: {
@@ -95,7 +101,8 @@
                     let _data = {
                         'displayName': this.displayName,
                         'description': this.description,
-                        'displayIcon': this.displayIcon
+                        'displayIcon': this.displayIcon,
+                        'feedIcon': this.feedIcon
                     }
 
                     axios

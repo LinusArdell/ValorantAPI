@@ -14,6 +14,10 @@ const AgentSchema = mongoose.Schema({
     displayIcon: {
         type: String,
         required: true
+    },
+    feedIcon:{
+        type: String,
+        required: true
     }
 })
 
