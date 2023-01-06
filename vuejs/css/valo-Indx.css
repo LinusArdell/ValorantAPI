@@ -76,12 +76,7 @@
   display: block;
  
 }
-.sticky {
-  
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 
 .topnav .naze a {
   float: left;
