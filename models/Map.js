@@ -13,6 +13,14 @@ const MapSchema = mongoose.Schema({
     splash: {
         type: String,
         required: true
+    },
+    miniMap: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
     }
 })
 

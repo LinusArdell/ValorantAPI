@@ -60,8 +60,16 @@
                                 <textarea class="form-control" v-model="coordinates"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Map Image:</label>
+                                <label for="message-text" class="col-form-label">Map Image :</label>
                                 <input type="text" class="form-control" v-model="splash"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Mini Map :</label>
+                                <input type="text" class="form-control" v-model="miniMap"></input>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Map Description :</label>
+                                <input type="text" class="form-control" v-model="description"></input>
                             </div>
                         </form>
                     </div>
@@ -82,8 +90,8 @@
                     <figcaption class="card__caption">
                         <h2 class="card__title"><b> {{data.displayName}} </b>
                             <h5> {{data.coordinates}} </p></h5>
-                        <p class="card__snippet">NASA released a list of 219 new “planet candidates” discovered by the Kepler space telescope</p>
-                        <img src="../img/neptune.jpg" alt="" srcset="" style=" height:200px ; width: 350px">
+                        <p class="card__snippet">{{data.description}}</p>
+                        <img v-bind:src="data.miniMap" alt="" srcset="" style=" height:200px ; width: 350px">
                     </figcaption>
                 </figure>
             </div>
@@ -141,7 +149,9 @@
 
                 displayName: null,
                 coordinates: null,
-                splash: null
+                splash: null,
+                miniMap: null,
+                description: null
             },
 
             methods: {
@@ -150,7 +160,9 @@
                     let _data = {
                         'displayName': this.displayName,
                         'coordinates': this.coordinates,
-                        'splash': this.splash
+                        'splash': this.splash,
+                        'miniMap': this.miniMap,
+                        'description':this.description
                     }
 
                     axios

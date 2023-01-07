@@ -8,7 +8,9 @@ router.post('/', async (req, res) => {
     const mapPost = new Map({
         displayName: req.body.displayName,
         coordinates: req.body.coordinates,
-        splash: req.body.splash
+        splash: req.body.splash,
+        miniMap: req.body.miniMap,
+        description: req.body.description
     })
 
     try {
