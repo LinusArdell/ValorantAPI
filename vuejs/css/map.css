@@ -64,61 +64,6 @@ body{
     color: rgb(0, 0, 0);
     font-weight: bold;
   }
-/* .topnav {
-    position: absolute;
-    float: left;
-    display: block;
-    overflow: hidden;
-    text-align: center;
-  
-    padding-bottom: 5px;
-    text-decoration: none;
-    padding-left: 100px;
-    background-color: rgba(25, 25, 25, 0);
-}
-
-
-.container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-}
-
-/* Button on Navbar 
-.topnav button {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-    background-color: none;
-    border: none;
-}
-
-.topnav button:hover {
-    background-color: rgba(250, 68, 84.100);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
-
-cardding 
- */
- /* .card-group{
-    height: auto;
-    width: auto;
- }
-.card{
-height: 300px;
-  width: 100%;
-  text-align: center;
-  margin: 10px 20px 20px 20px;
-  padding: 10px 10px 10px;
-  transition: all ease-in-out .3s;
-  background: rgb(10, 10, 10);
-  color: #fff;
-} */
 
 html {
  
@@ -140,7 +85,7 @@ html {
   }
   .card .card__thumb img{
     width: 500px;
-    height: 300px;
+    height: 400px;
   }
   .card {
     width: 500px;
@@ -160,7 +105,7 @@ html {
     top: 0;
   }
   .card:hover .card__snippet {
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .card__thumb {
     position: relative;
@@ -204,7 +149,7 @@ html {
   }
   .card__title {
     display: -webkit-box;
-    max-height: 85px;
+    max-height: 90px;
     overflow: hidden;
     text-align: center;
     font-family: "Playfair Display", serif;
@@ -273,8 +218,8 @@ html {
   /* design form */
   .modal-header{
     background: linear-gradient(
-45deg
-,#230814ee 20%,#ff4654ee), center center no-repeat;
+    45deg
+    ,#230814ee 20%,#ff4654ee), center center no-repeat;
 color: #ffffff;
 font-weight: bold;
   }
