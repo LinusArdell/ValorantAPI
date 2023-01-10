@@ -79,10 +79,11 @@
 
 
 .topnav .naze a {
-  float: left;
-  color: #f2f2f2;
+  float: right;
+  color: #ff3333;
+  font-weight: bolder;
   text-align: center;
-   padding: 14px 16px;
+   padding: 14px 46px 30px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -94,9 +95,15 @@
 }
 
 /* body */
-.bg-color{
-  background-color: rgb(31, 31, 31);
+.postbody{
+  background: rgb(65, 65, 65);
+  margin: 5px 50px 50px;
+}
 
+.bg-color{
+  background: url(../../img/Carbon-bg.jpg);
+  background-color: rgb(31, 31, 31);
+  color: wheat;
 }
 .text-white{
   color: white;
